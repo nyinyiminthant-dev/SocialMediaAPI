@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SocialMediaAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\dtos\\addfriend\u0026responsefriend\\addfriendrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\dtos\\addfriend\u0026responsefriend\\addfriendrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\services\\addfriend\u0026responsefriend\\addfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\services\\addfriend\u0026responsefriend\\addfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\services\\login\u0026register\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\services\\login\u0026register\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\services\\login\u0026register\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\services\\login\u0026register\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\iservices\\addfriend\u0026responsefriend\\iaddfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\iservices\\addfriend\u0026responsefriend\\iaddfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\dtos\\addfriend\u0026responsefriend\\addfriendresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\dtos\\addfriend\u0026responsefriend\\addfriendresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\entities\\friend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\entities\\friend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\dtos\\login\u0026registerdto\\loginresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\dtos\\login\u0026registerdto\\loginresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54049C5-41E8-4164-98D7-A33A6F940EA3}|Api\\Api.csproj|c:\\socialmediaapi\\api\\controllers\\login\u0026register\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54049C5-41E8-4164-98D7-A33A6F940EA3}|Api\\Api.csproj|solutionrelative:api\\controllers\\login\u0026register\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\shared\\commontokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\shared\\commontokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\shared\\commonauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\shared\\commonauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\shared\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\shared\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\dtos\\login\u0026registerdto\\registerresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\dtos\\login\u0026registerdto\\registerresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|c:\\socialmediaapi\\model\\dtos\\login\u0026registerdto\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1287C1-C398-4801-9F6A-748DCC53CBF2}|MODEL\\MODEL.csproj|solutionrelative:model\\dtos\\login\u0026registerdto\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|c:\\socialmediaapi\\bal\\iservices\\login\u0026register\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6298883-7771-49D7-BA53-7945430C7175}|BAL\\BAL.csproj|solutionrelative:bal\\iservices\\login\u0026register\\ilogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddFriendRequestModel.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendRequestModel.cs",
+              "RelativeDocumentMoniker": "MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendRequestModel.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendRequestModel.cs",
+              "RelativeToolTip": "MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:04:03.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Friend.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\Entities\\Friend.cs",
+              "RelativeDocumentMoniker": "MODEL\\Entities\\Friend.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\Entities\\Friend.cs",
+              "RelativeToolTip": "MODEL\\Entities\\Friend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:55:14.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddFriend.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\Services\\AddFriend\u0026ResponseFriend\\AddFriend.cs",
+              "RelativeDocumentMoniker": "BAL\\Services\\AddFriend\u0026ResponseFriend\\AddFriend.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\Services\\AddFriend\u0026ResponseFriend\\AddFriend.cs",
+              "RelativeToolTip": "BAL\\Services\\AddFriend\u0026ResponseFriend\\AddFriend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:53:56.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAddFriend.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\IServices\\AddFriend\u0026ResponseFriend\\IAddFriend.cs",
+              "RelativeDocumentMoniker": "BAL\\IServices\\AddFriend\u0026ResponseFriend\\IAddFriend.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\IServices\\AddFriend\u0026ResponseFriend\\IAddFriend.cs",
+              "RelativeToolTip": "BAL\\IServices\\AddFriend\u0026ResponseFriend\\IAddFriend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:51:56.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MODEL\\Entities\\User.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\Entities\\User.cs",
+              "RelativeToolTip": "MODEL\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:00:11.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginResponseModel.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginResponseModel.cs",
+              "RelativeDocumentMoniker": "MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginResponseModel.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginResponseModel.cs",
+              "RelativeToolTip": "MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:50:26.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\Services\\Login\u0026Register\\Login.cs",
+              "RelativeDocumentMoniker": "BAL\\Services\\Login\u0026Register\\Login.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\Services\\Login\u0026Register\\Login.cs",
+              "RelativeToolTip": "BAL\\Services\\Login\u0026Register\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:45:12.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ILogin.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\IServices\\Login\u0026Register\\ILogin.cs",
+              "RelativeDocumentMoniker": "BAL\\IServices\\Login\u0026Register\\ILogin.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\IServices\\Login\u0026Register\\ILogin.cs",
+              "RelativeToolTip": "BAL\\IServices\\Login\u0026Register\\ILogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:44:12.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceManager.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\Shared\\ServiceManager.cs",
+              "RelativeDocumentMoniker": "BAL\\Shared\\ServiceManager.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\Shared\\ServiceManager.cs",
+              "RelativeToolTip": "BAL\\Shared\\ServiceManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:43:46.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\Services\\Login\u0026Register\\Register.cs",
+              "RelativeDocumentMoniker": "BAL\\Services\\Login\u0026Register\\Register.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\Services\\Login\u0026Register\\Register.cs",
+              "RelativeToolTip": "BAL\\Services\\Login\u0026Register\\Register.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:01:33.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddFriendResponseModel.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendResponseModel.cs",
+              "RelativeDocumentMoniker": "MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendResponseModel.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendResponseModel.cs",
+              "RelativeToolTip": "MODEL\\DTOs\\AddFriend\u0026ResponseFriend\\AddFriendResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:04:37.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterResponseModel.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\DTOs\\Login\u0026RegisterDTO\\RegisterResponseModel.cs",
+              "RelativeDocumentMoniker": "MODEL\\DTOs\\Login\u0026RegisterDTO\\RegisterResponseModel.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\DTOs\\Login\u0026RegisterDTO\\RegisterResponseModel.cs",
+              "RelativeToolTip": "MODEL\\DTOs\\Login\u0026RegisterDTO\\RegisterResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:59:32.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\Api\\Controllers\\Login\u0026Register\\LoginController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\Login\u0026Register\\LoginController.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\Api\\Controllers\\Login\u0026Register\\LoginController.cs",
+              "RelativeToolTip": "Api\\Controllers\\Login\u0026Register\\LoginController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwC8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:10:39.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CommonTokenGenerator.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\Shared\\CommonTokenGenerator.cs",
+              "RelativeDocumentMoniker": "BAL\\Shared\\CommonTokenGenerator.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\Shared\\CommonTokenGenerator.cs",
+              "RelativeToolTip": "BAL\\Shared\\CommonTokenGenerator.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:42:29.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommonAuthentication.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\BAL\\Shared\\CommonAuthentication.cs",
+              "RelativeDocumentMoniker": "BAL\\Shared\\CommonAuthentication.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\BAL\\Shared\\CommonAuthentication.cs",
+              "RelativeToolTip": "BAL\\Shared\\CommonAuthentication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:42:24.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginRequestModel.cs",
+              "DocumentMoniker": "C:\\SocialMediaAPI\\MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginRequestModel.cs",
+              "RelativeDocumentMoniker": "MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginRequestModel.cs",
+              "ToolTip": "C:\\SocialMediaAPI\\MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginRequestModel.cs",
+              "RelativeToolTip": "MODEL\\DTOs\\Login\u0026RegisterDTO\\LoginRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:40:25.735Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
