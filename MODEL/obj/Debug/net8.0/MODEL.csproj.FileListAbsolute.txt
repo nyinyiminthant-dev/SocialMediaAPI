@@ -22,3 +22,4 @@ C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\MODEL.dll
 C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\refint\MODEL.dll
 C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\MODEL.pdb
 C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\ref\MODEL.dll
+C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\MODEL.sourcelink.json

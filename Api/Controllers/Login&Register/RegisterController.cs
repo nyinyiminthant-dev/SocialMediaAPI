@@ -32,4 +32,32 @@ public class RegisterController : ControllerBase
             return BadRequest(new RegisterResponseModel { Message = ex.Message, Data = null});
         }
     }
+
+    [HttpPost("VerifyAccount")]
+    public async Task<IActionResult> VerifyAccount([FromQuery] string email, [FromQuery] string otp)
+    {
+        try
+        {
+            var response = await _registerService.VerifyAccount(email, otp);
+            return Ok(new RegisterResponseModel { IsSuccess = response.IsSuccess, Message = response.Message, Data = response.Data });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new RegisterResponseModel { Message = ex.Message, Data = null });
+        }
+    }
+
+    [HttpPost("ResendOTP")]
+    public async Task<IActionResult> ResendOTP([FromQuery] string email)
+    {
+        try
+        {
+            var response = await _registerService.ResendOTP(email);
+            return Ok(new RegisterResponseModel { IsSuccess = response.IsSuccess, Message = response.Message, Data = response.Data });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new RegisterResponseModel { Message = ex.Message, Data = null });
+        }
+    }
 }

@@ -10,4 +10,6 @@ namespace BAL.IServices.Login_Register;
 public interface IRegister
 {
     Task<RegisterResponseModel> UserRegister(RegisterRequestModel requestModel);
+    Task<RegisterResponseModel> VerifyAccount(string email, string otp);
+    Task<RegisterResponseModel> ResendOTP(string email);
 }

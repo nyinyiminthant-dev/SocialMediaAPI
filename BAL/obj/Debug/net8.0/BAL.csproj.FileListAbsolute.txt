@@ -17,3 +17,4 @@ C:\SocialMediaAPI\BAL\obj\Debug\net8.0\BAL.pdb
 C:\SocialMediaAPI\BAL\obj\Debug\net8.0\ref\BAL.dll
 C:\SocialMediaAPI\BAL\bin\Debug\net8.0\BAL.runtimeconfig.json
 C:\SocialMediaAPI\BAL\obj\Debug\net8.0\BAL.genruntimeconfig.cache
+C:\SocialMediaAPI\BAL\obj\Debug\net8.0\BAL.sourcelink.json

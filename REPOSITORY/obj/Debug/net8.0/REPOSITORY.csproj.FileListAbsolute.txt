@@ -28,3 +28,4 @@ C:\SocialMediaAPI\REPOSITORY\obj\Debug\net8.0\REPOSITORY.dll
 C:\SocialMediaAPI\REPOSITORY\obj\Debug\net8.0\refint\REPOSITORY.dll
 C:\SocialMediaAPI\REPOSITORY\obj\Debug\net8.0\REPOSITORY.pdb
 C:\SocialMediaAPI\REPOSITORY\obj\Debug\net8.0\ref\REPOSITORY.dll
+C:\SocialMediaAPI\REPOSITORY\obj\Debug\net8.0\REPOSITORY.sourcelink.json

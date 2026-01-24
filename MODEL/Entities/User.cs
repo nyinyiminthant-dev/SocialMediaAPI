@@ -17,6 +17,11 @@ public class User
     public string? Email { get; set; }
     public string? Password { get; set; }
 
+    public string? OTP {get; set; }
+    public DateTime OTP_exp {get; set; }
+
     public DateTime CreatedAt { get; set; }
     public string? Role { get; set; }
-}
+
+    public string? status { get; set; }
+    }
