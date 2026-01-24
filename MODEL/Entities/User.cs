@@ -23,5 +23,5 @@ public class User
     public DateTime CreatedAt { get; set; }
     public string? Role { get; set; }
 
-    public string? status { get; set; }
+    public string? Status { get; set; }
     }

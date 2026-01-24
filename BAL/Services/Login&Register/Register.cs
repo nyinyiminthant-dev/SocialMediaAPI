@@ -51,7 +51,7 @@ public class Register : IRegister
             OTP = otp,
             OTP_exp = DateTime.Now.AddMinutes(5),
             CreatedAt = DateTime.Now,
-            status = "N"
+            Status = "N"
         };
 
         await _unitOfWork.Users.Add(User);
@@ -172,7 +172,7 @@ public class Register : IRegister
             return model;
         }
 
-        user.status = "Y";
+        user.Status = "Y";
         user.OTP = null;
         user.OTP_exp = DateTime.Now;
         _unitOfWork.Users.Update(user);
