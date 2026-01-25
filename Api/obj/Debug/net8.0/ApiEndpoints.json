@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Api.Controllers.AddFriend_ResponseFriend.FriendController",
+    "Method": "MakeFriendRequest",
+    "RelativePath": "api/Friend/MakeFriendRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "MODEL.DTOs.AddFriend_ResponseFriend.AddFriendRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Api.Controllers.Login_Register.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login/Login",

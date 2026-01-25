@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Friend/MakeFriendRequest": {
+      "post": {
+        "tags": [
+          "Friend"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFriendRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFriendRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFriendRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Login/Login": {
       "post": {
         "tags": [
@@ -119,6 +150,20 @@
   },
   "components": {
     "schemas": {
+      "AddFriendRequestModel": {
+        "type": "object",
+        "properties": {
+          "fromUser_Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "toUser_Id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequestModel": {
         "type": "object",
         "properties": {
@@ -151,6 +196,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter JWT like: Bearer {your token}",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

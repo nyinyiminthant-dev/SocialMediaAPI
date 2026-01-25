@@ -1,5 +1,6 @@
 ﻿using BAL.IServices.Login_Register;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MODEL.DTOs.Login_RegisterDTO;
@@ -22,6 +23,7 @@ public class LoginController : ControllerBase
    }
 
     [HttpPost("Login")]
+    [AllowAnonymous]
     public async Task<IActionResult> Login(LoginRequestModel requestModel)
     {
 

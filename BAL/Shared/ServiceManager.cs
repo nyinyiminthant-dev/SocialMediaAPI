@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using REPOSITORY.UnitOfWork;
 using BAL.IServices.Login_Register;
 using BAL.Services.Login_Register;
+using BAL.IServices.AddFriend_ResponseFriend;
+using BAL.Services.AddFriend_ResponseFriend;
 
 namespace BAL.Shared;
 
@@ -25,5 +27,6 @@ public class ServiceManager
         services.AddScoped< IUnitOfWork, UnitOfWork>();
         services.AddScoped<IRegister, Register>();
         services.AddScoped<ILogin, Login>();
+        services.AddScoped<IAddFriend, AddFriend>();
     }
 }

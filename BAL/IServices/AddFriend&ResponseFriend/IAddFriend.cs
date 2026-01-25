@@ -9,5 +9,5 @@ namespace BAL.IServices.AddFriend_ResponseFriend;
 
 public interface IAddFriend
 {
-    Task<AddFriendResponseModel> AddFriend (AddFriendRequestModel requestModel);
+    Task<AddFriendResponseModel> MakeFriendRequest (AddFriendRequestModel requestModel);
 }

@@ -1,4 +1,5 @@
 ﻿using BAL.IServices.Login_Register;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,7 @@ using MODEL.DTOs.Login_RegisterDTO;
 namespace Api.Controllers.Login_Register;
 
 [Route("api/[controller]")]
+[AllowAnonymous]
 [ApiController]
 public class RegisterController : ControllerBase
 {
