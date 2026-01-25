@@ -25,6 +25,8 @@ public class Register : IRegister
         _unitOfWork = unitOfWork;
     }
 
+
+
    public async Task<RegisterResponseModel> UserRegister (RegisterRequestModel requestModel)
     {
         RegisterResponseModel model = new RegisterResponseModel();

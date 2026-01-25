@@ -53,7 +53,6 @@ public class Login : ILogin
             model.Message = "Login Successful";
             model.Data = userdata;
             return model;
-
         }
 
         else

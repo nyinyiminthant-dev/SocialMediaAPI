@@ -55,6 +55,7 @@ public class CommonTokenGenerator
 
                new Claim(ClaimTypes.NameIdentifier, user.User_Id.ToString()),
                 new Claim(ClaimTypes.Name, user.Email!),
+                new Claim(ClaimTypes.Role, user.Role!)
               
 
             };
@@ -88,18 +89,18 @@ public class CommonTokenGenerator
 
         try
         {
-            var principal = tokenHandler.ValidateToken(token, validationParameters, out var validatedToken);
+            var principal =  tokenHandler.ValidateToken(token, validationParameters, out var validatedToken);
 
             if (validatedToken is JwtSecurityToken jwtSecurityToken && jwtSecurityToken.ValidTo < DateTime.UtcNow)
             {
-                return false; // Token is expired
+                return false; 
             }
 
-            return true; // Token is valid
+            return true; 
         }
         catch (Exception)
         {
-            return false; // Token validation failed
+            return false; 
         }
     }
 

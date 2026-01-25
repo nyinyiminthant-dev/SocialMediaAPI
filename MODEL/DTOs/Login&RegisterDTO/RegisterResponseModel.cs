@@ -10,4 +10,5 @@ namespace MODEL.DTOs.Login_RegisterDTO;
 public class RegisterResponseModel : Common
 {
     public User? Data { get; set; }
+
 }
