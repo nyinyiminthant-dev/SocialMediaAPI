@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Social Media App\\Api\\Api.csproj": {}
+    "C:\\SocialMediaAPI\\Api\\Api.csproj": {}
   },
   "projects": {
-    "D:\\Social Media App\\Api\\Api.csproj": {
+    "C:\\SocialMediaAPI\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Social Media App\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\SocialMediaAPI\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "D:\\Social Media App\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Social Media App\\Api\\obj\\",
+        "projectPath": "C:\\SocialMediaAPI\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\NyiNyiMinThant\\.nuget\\packages\\",
+        "outputPath": "C:\\SocialMediaAPI\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NyiNyiMinThant\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,20 +26,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Social Media App\\BAL\\BAL.csproj": {
-                "projectPath": "D:\\Social Media App\\BAL\\BAL.csproj"
+              "C:\\SocialMediaAPI\\BAL\\BAL.csproj": {
+                "projectPath": "C:\\SocialMediaAPI\\BAL\\BAL.csproj"
               },
-              "D:\\Social Media App\\MODEL\\MODEL.csproj": {
-                "projectPath": "D:\\Social Media App\\MODEL\\MODEL.csproj"
+              "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj": {
+                "projectPath": "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj"
               },
-              "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj": {
-                "projectPath": "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj"
+              "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj": {
+                "projectPath": "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj"
               }
             }
           }
@@ -54,7 +55,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -96,24 +97,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Social Media App\\BAL\\BAL.csproj": {
+    "C:\\SocialMediaAPI\\BAL\\BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Social Media App\\BAL\\BAL.csproj",
+        "projectUniqueName": "C:\\SocialMediaAPI\\BAL\\BAL.csproj",
         "projectName": "BAL",
-        "projectPath": "D:\\Social Media App\\BAL\\BAL.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Social Media App\\BAL\\obj\\",
+        "projectPath": "C:\\SocialMediaAPI\\BAL\\BAL.csproj",
+        "packagesPath": "C:\\Users\\NyiNyiMinThant\\.nuget\\packages\\",
+        "outputPath": "C:\\SocialMediaAPI\\BAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NyiNyiMinThant\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -122,17 +123,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Social Media App\\MODEL\\MODEL.csproj": {
-                "projectPath": "D:\\Social Media App\\MODEL\\MODEL.csproj"
+              "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj": {
+                "projectPath": "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj"
               },
-              "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj": {
-                "projectPath": "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj"
+              "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj": {
+                "projectPath": "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj"
               }
             }
           }
@@ -147,7 +149,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -198,24 +200,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Social Media App\\MODEL\\MODEL.csproj": {
+    "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Social Media App\\MODEL\\MODEL.csproj",
+        "projectUniqueName": "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj",
         "projectName": "MODEL",
-        "projectPath": "D:\\Social Media App\\MODEL\\MODEL.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Social Media App\\MODEL\\obj\\",
+        "projectPath": "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj",
+        "packagesPath": "C:\\Users\\NyiNyiMinThant\\.nuget\\packages\\",
+        "outputPath": "C:\\SocialMediaAPI\\MODEL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NyiNyiMinThant\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -224,6 +226,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -242,7 +245,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -269,24 +272,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj": {
+    "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj",
+        "projectUniqueName": "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj",
         "projectName": "REPOSITORY",
-        "projectPath": "D:\\Social Media App\\REPOSITORY\\REPOSITORY.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Social Media App\\REPOSITORY\\obj\\",
+        "projectPath": "C:\\SocialMediaAPI\\REPOSITORY\\REPOSITORY.csproj",
+        "packagesPath": "C:\\Users\\NyiNyiMinThant\\.nuget\\packages\\",
+        "outputPath": "C:\\SocialMediaAPI\\REPOSITORY\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NyiNyiMinThant\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -295,14 +298,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Social Media App\\MODEL\\MODEL.csproj": {
-                "projectPath": "D:\\Social Media App\\MODEL\\MODEL.csproj"
+              "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj": {
+                "projectPath": "C:\\SocialMediaAPI\\MODEL\\MODEL.csproj"
               }
             }
           }
@@ -317,7 +321,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -338,7 +342,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
