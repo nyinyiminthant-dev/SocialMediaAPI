@@ -55,7 +55,7 @@ public class Register : IRegister
             CreatedAt = DateTime.Now,
             Status = "N"
         };
-
+             
         await _unitOfWork.Users.Add(User);
         int result = await _unitOfWork.SaveChangesAsync();
 
