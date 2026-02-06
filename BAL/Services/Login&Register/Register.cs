@@ -52,7 +52,7 @@ public class Register : IRegister
             Role = "U",
             OTP = otp,
             OTP_exp = DateTime.Now.AddMinutes(5),
-            CreatedAt = DateTime.Now,
+            CreateAt = DateTime.Now,
             Status = "N"
         };
              

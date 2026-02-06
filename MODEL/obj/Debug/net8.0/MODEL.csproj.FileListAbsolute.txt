@@ -23,3 +23,15 @@ C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\refint\MODEL.dll
 C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\MODEL.pdb
 C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\ref\MODEL.dll
 C:\SocialMediaAPI\MODEL\obj\Debug\net8.0\MODEL.sourcelink.json
+C:\d\personal_team\MODEL\bin\Debug\net8.0\MODEL.deps.json
+C:\d\personal_team\MODEL\bin\Debug\net8.0\MODEL.dll
+C:\d\personal_team\MODEL\bin\Debug\net8.0\MODEL.pdb
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.csproj.AssemblyReference.cache
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.GeneratedMSBuildEditorConfig.editorconfig
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.AssemblyInfoInputs.cache
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.AssemblyInfo.cs
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.csproj.CoreCompileInputs.cache
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.dll
+C:\d\personal_team\MODEL\obj\Debug\net8.0\refint\MODEL.dll
+C:\d\personal_team\MODEL\obj\Debug\net8.0\MODEL.pdb
+C:\d\personal_team\MODEL\obj\Debug\net8.0\ref\MODEL.dll

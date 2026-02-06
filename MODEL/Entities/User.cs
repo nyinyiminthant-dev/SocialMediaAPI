@@ -20,7 +20,7 @@ public class User
     public string? OTP {get; set; }
     public DateTime OTP_exp {get; set; }
 
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreateAt { get; set; }
     public string? Role { get; set; }
 
     public string? Status { get; set; }
