@@ -51,8 +51,8 @@ public class Register : IRegister
             Password = hashedPassword,
             Role = "U",
             OTP = otp,
-            OTP_exp = DateTime.Now.AddMinutes(5),
-            CreateAt = DateTime.Now,
+            OTPExp = DateTime.Now.AddMinutes(5),
+            CreatedAt = DateTime.Now,
             Status = "N"
         };
              
@@ -147,7 +147,7 @@ public class Register : IRegister
     public async Task<RegisterResponseModel> VerifyAccount(string email, string otp)
     {
         var model = new RegisterResponseModel();
-        var user =    _unitOfWork.Users.GetByExp(x => x.Email == email && x.OTP == otp && x.OTP_exp >= DateTime.Now).FirstOrDefault();
+        var user =    _unitOfWork.Users.GetByExp(x => x.Email == email && x.OTP == otp && x.OTPExp >= DateTime.Now).FirstOrDefault();
 
         if(user is null)
         {
@@ -166,7 +166,7 @@ public class Register : IRegister
             return model;
         }
 
-        if(user.OTP_exp < DateTime.Now)
+        if(user.OTPExp < DateTime.Now)
         {
             model.IsSuccess = false;
             model.Message = "OTP has expired.";
@@ -176,7 +176,7 @@ public class Register : IRegister
 
         user.Status = "Y";
         user.OTP = null;
-        user.OTP_exp = DateTime.Now;
+        user.OTPExp = DateTime.Now;
         _unitOfWork.Users.Update(user);
         int result = await _unitOfWork.SaveChangesAsync();
 
@@ -202,7 +202,7 @@ public class Register : IRegister
         }
         var otp = GenerateOTP();
         user.OTP = otp;
-        user.OTP_exp = DateTime.Now.AddMinutes(5);
+        user.OTPExp = DateTime.Now.AddMinutes(5);
         _unitOfWork.Users.Update(user);
         int result = await _unitOfWork.SaveChangesAsync();
         if(result > 0)

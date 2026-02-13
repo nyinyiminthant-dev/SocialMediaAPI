@@ -44,7 +44,7 @@ public class Login : ILogin
 
         if(isValid)
         {
-            model.User_Id = userdata.User_Id;
+            model.User_Id = userdata.UserId;
            
             model.UserName = userdata.UserName;
             model.Email = userdata.Email;

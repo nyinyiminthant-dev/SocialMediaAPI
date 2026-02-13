@@ -46,8 +46,8 @@ public class AddFriend : IAddFriend
 
             var friendRequest = new Friend()
             {
-                FromUser_Id = fromFriend.User_Id,
-                ToUser_Id = toFriend.User_Id,
+                FromUser_Id = fromFriend.UserId,
+                ToUser_Id = toFriend.UserId,
                 CreatedAt = DateTime.Now,
                 Status = "Pending"
             };
