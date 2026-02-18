@@ -28,7 +28,50 @@ public class FriendController : ControllerBase
         }
         catch (Exception ex)
         {
-            return BadRequest(new MODEL.DTOs.AddFriend_ResponseFriend.AddFriendResponseModel { IsSuccess = false, Message = ex.Message, FromUser_Id = 0, ToUser_Id = 0, CreatedAt = DateTime.MinValue, Status = null });
+            return BadRequest(new AddFriendResponseModel { IsSuccess = false, Message = ex.Message, FromUser_Id = 0, ToUser_Id = 0, CreatedAt = DateTime.MinValue, Status = null });
         }
+    }
+
+    [HttpPatch("AcceptFriendRequest")]
+    public async Task<IActionResult> AcceptFriendRequest([FromBody] AcceptFriendRequestModel requestModel)
+    {
+        try
+        {
+            var response = await _addFirendService.AcceptFriendRequest(requestModel);
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new AcceptFriendResponseModel { IsSuccess = false, Message = ex.Message });
+        }
+    }
+
+
+    [HttpDelete("CancelFriend")]
+    public async Task<IActionResult> CancelFriend([FromBody] CancelFriendRequestModel requestModel)
+    {
+        try
+        {
+            var response = await _addFirendService.CancelFriend(requestModel);
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new CancelFriendResponseModel { IsSuccess = false, Message = ex.Message });
+        }
+    }
+
+     [HttpGet("GetFriendsById")]
+     public async Task<IActionResult> GetFriendsById([FromQuery] GetFriendByIdRequestModel requestModel)
+     {
+         try
+         {
+             var response = await _addFirendService.GetFriendsById(requestModel);
+             return Ok(response);
+         }
+         catch (Exception ex)
+         {
+             return BadRequest(new GetFriendsByIdResponseModel { IsSuccess = false, Message = ex.Message });
+         }
     }
 }

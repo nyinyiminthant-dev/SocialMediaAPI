@@ -144,6 +144,7 @@ public class Register : IRegister
         }
     }
 
+
     public async Task<RegisterResponseModel> VerifyAccount(string email, string otp)
     {
         var model = new RegisterResponseModel();

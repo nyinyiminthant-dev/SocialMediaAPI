@@ -13,4 +13,5 @@ public class AddFriendResponseModel : Common
     public int ToUser_Id { get; set; }
     public DateTime CreatedAt { get; set; }
     public string? Status { get; set; }
+    public int User_Id { get; set; }
 }

@@ -1,5 +1,6 @@
 ﻿using BAL.IServices.AddFriend_ResponseFriend;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using MODEL.DTOs.AddFriend_ResponseFriend;
 using MODEL.Entity;
 using REPOSITORY.UnitOfWork;
@@ -20,6 +21,118 @@ public class AddFriend : IAddFriend
     public AddFriend(IUnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
+    }
+
+    public async Task<AcceptFriendResponseModel> AcceptFriendRequest(AcceptFriendRequestModel requestModel)
+    {
+        try
+        {
+
+            var friendRequest = await _unitOfWork.Friends.GetByIdAsync(requestModel.Friend_Id);
+
+            if (friendRequest is null)
+            {
+                return new AcceptFriendResponseModel
+                {
+                    IsSuccess = false,
+                    Message = "No data",
+
+                };
+
+            }
+
+            friendRequest.Status = "Friend";
+            friendRequest.CreatedAt = DateTime.Now;
+         
+            _unitOfWork.Friends.Update(friendRequest);
+
+            int result = await _unitOfWork.SaveChangesAsync();
+
+            string message = result > 0 ? "Approve Friend Successful" : "Approve Friend Failed";
+
+            return new AcceptFriendResponseModel
+            {
+                IsSuccess = result > 0,
+                Message = message
+
+            };
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        
+    }
+
+    public async Task<CancelFriendResponseModel> CancelFriend(CancelFriendRequestModel requestModel)
+    {
+       try
+        {
+
+            var friendRequest = await _unitOfWork.Friends.GetByIdAsync(requestModel.Friend_Id);
+
+           if(friendRequest is null)
+            {
+                return new CancelFriendResponseModel
+                {
+                    IsSuccess = false,
+                    Message = "No data"
+
+                };
+
+            }
+
+            
+            _unitOfWork.Friends.Delete(friendRequest);
+            int result = await _unitOfWork.SaveChangesAsync();
+
+            string message = result > 0 ? "Cancel Friend Successful" : "Cancel Friend Failed";
+
+            return new CancelFriendResponseModel
+            {
+                IsSuccess = result > 0,
+                Message = message
+            };
+
+        } catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
+    public async Task<GetFriendsByIdResponseModel> GetFriendsById(GetFriendByIdRequestModel requestModel)
+    {
+        try
+        {
+
+            var friends = await _unitOfWork.Friends.GetByCondition(
+        x => x.User_Id == requestModel.User_Id &&
+             x.Status == "Friend"
+    );
+
+
+            if (friends is null)
+            {
+                return new GetFriendsByIdResponseModel
+                {
+                    IsSuccess = false,
+                    Message = "No data",
+                    Data = null
+                };
+            }
+
+            return new GetFriendsByIdResponseModel
+            {
+                IsSuccess = true,
+                Message = "Successful",
+                Data = friends.ToList()
+            };
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        
     }
 
     public async Task<AddFriendResponseModel> MakeFriendRequest(AddFriendRequestModel requestModel)
@@ -49,7 +162,9 @@ public class AddFriend : IAddFriend
                 FromUser_Id = fromFriend.UserId,
                 ToUser_Id = toFriend.UserId,
                 CreatedAt = DateTime.Now,
-                Status = "Pending"
+                Status = "Pending",
+                User_Id= fromFriend.UserId
+
             };
 
           await  _unitOfWork.Friends.Add(friendRequest);
@@ -63,7 +178,9 @@ public class AddFriend : IAddFriend
                 FromUser_Id = friendRequest.FromUser_Id,
                 ToUser_Id = friendRequest.ToUser_Id,
                 CreatedAt = friendRequest.CreatedAt,
-                Status = friendRequest.Status
+                Status = friendRequest.Status,
+                User_Id = friendRequest.User_Id
+
 
             };
 
@@ -85,4 +202,6 @@ public class AddFriend : IAddFriend
         }
 
         }
+
+
 }

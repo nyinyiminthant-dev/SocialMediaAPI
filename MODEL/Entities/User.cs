@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MODEL.Entity;
 
-[Table("User_Tbl")]
+[Table("UserTbl")]
 public class User
 { 
     [Key]

@@ -10,4 +10,10 @@ namespace BAL.IServices.AddFriend_ResponseFriend;
 public interface IAddFriend
 {
     Task<AddFriendResponseModel> MakeFriendRequest (AddFriendRequestModel requestModel);
+
+    Task<AcceptFriendResponseModel> AcceptFriendRequest ( AcceptFriendRequestModel requestModel);
+
+    Task<CancelFriendResponseModel> CancelFriend (CancelFriendRequestModel requestModel);
+
+    Task<GetFriendsByIdResponseModel> GetFriendsById (GetFriendByIdRequestModel requestModel);
 }
