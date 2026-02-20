@@ -41,6 +41,8 @@ public class AddFriend : IAddFriend
 
             }
 
+           
+
             friendRequest.Status = "Friend";
             friendRequest.CreatedAt = DateTime.Now;
          
@@ -143,6 +145,33 @@ public class AddFriend : IAddFriend
           
             var toFriend = await _unitOfWork.Users.GetByIdAsync(requestModel.ToUser_Id);
             var fromFriend = await _unitOfWork.Users.GetByIdAsync(requestModel.FromUser_Id);
+
+            var friendExist = _unitOfWork.Friends.GetByExp(x =>
+           (x.FromUser_Id == fromFriend!.UserId && x.ToUser_Id == toFriend!.UserId)
+        || (x.FromUser_Id == toFriend!.UserId && x.ToUser_Id == fromFriend!.UserId)
+       ).FirstOrDefault();
+
+            if (friendExist != null)
+            {
+                if (friendExist.Status == "Friend")
+                {
+                    return new AddFriendResponseModel
+                    {
+                        IsSuccess = false,
+                        Message = "Already Friends"
+                    };
+                }
+
+                if (friendExist.Status == "Pending")
+                {
+                    return new AddFriendResponseModel
+                    {
+                        IsSuccess = false,
+                        Message = "Friend request already sent"
+                    };
+                }
+            }
+
             if (toFriend == null || fromFriend == null)
             {
                 return new AddFriendResponseModel()
@@ -166,6 +195,10 @@ public class AddFriend : IAddFriend
                 User_Id= fromFriend.UserId
 
             };
+
+       
+
+           
 
           await  _unitOfWork.Friends.Add(friendRequest);
           int result = await _unitOfWork.SaveChangesAsync();
