@@ -21,7 +21,8 @@ public class ServiceManager
     {
         services.AddDbContextPool<DataContext>(options =>
         {
-            options.UseSqlServer(appSettings.ConnectionString);
+            //options.UseSqlServer(appSettings.ConnectionString);
+            options.UseMySql(appSettings.ConnectionString, ServerVersion.AutoDetect(appSettings.ConnectionString));
         });
 
         services.AddScoped< IUnitOfWork, UnitOfWork>();
