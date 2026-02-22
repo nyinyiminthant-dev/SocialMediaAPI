@@ -1,4 +1,5 @@
 ﻿using MODEL.DTOs;
+using MODEL.Entity;
 using REPOSITORY.Repositories.IRepository;
 using System;
 using System.Collections.Generic;

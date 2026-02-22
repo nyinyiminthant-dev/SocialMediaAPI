@@ -16,4 +16,5 @@ public class Post
     public int User_Id { get; set; }
     public string? content { get; set; }
     public DateTime Created_At { get; set; }
+    public DateTime Updated_At { get; set; }
 }
