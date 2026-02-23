@@ -106,20 +106,20 @@ public class AddFriend : IAddFriend
     {
         try
         {
+            var friends =   _unitOfWork.Friends
+                .GetByExp(x =>
+                    (x.FromUser_Id == requestModel.User_Id ||
+                     x.ToUser_Id == requestModel.User_Id) &&
+                    x.Status == "Friend")
+                .ToList();
 
-            var friends = await _unitOfWork.Friends.GetByCondition(
-        x => x.User_Id == requestModel.User_Id &&
-             x.Status == "Friend"
-    );
-
-
-            if (friends is null)
+            if (!friends.Any())
             {
                 return new GetFriendsByIdResponseModel
                 {
                     IsSuccess = false,
-                    Message = "No data",
-                    Data = null
+                    Message = "No friends found",
+                    Data = new List<Friend>()
                 };
             }
 
@@ -127,14 +127,18 @@ public class AddFriend : IAddFriend
             {
                 IsSuccess = true,
                 Message = "Successful",
-                Data = friends.ToList()
+                Data = friends
             };
         }
         catch (Exception ex)
         {
-            throw ex;
+            return new GetFriendsByIdResponseModel
+            {
+                IsSuccess = false,
+                Message = ex.Message,
+                Data = null
+            };
         }
-        
     }
 
     public async Task<AddFriendResponseModel> MakeFriendRequest(AddFriendRequestModel requestModel)
