@@ -12,6 +12,9 @@ using BAL.IServices.Login_Register;
 using BAL.Services.Login_Register;
 using BAL.IServices.AddFriend_ResponseFriend;
 using BAL.Services.AddFriend_ResponseFriend;
+using BAL.IServices.IPostService;
+using MODEL.Entity;
+using BAL.Services.Posts;
 
 namespace BAL.Shared;
 
@@ -21,12 +24,14 @@ public class ServiceManager
     {
         services.AddDbContextPool<DataContext>(options =>
         {
-            options.UseSqlServer(appSettings.ConnectionString);
+            //options.UseSqlServer(appSettings.ConnectionString);
+            options.UseMySql(appSettings.ConnectionString, ServerVersion.AutoDetect(appSettings.ConnectionString));
         });
 
         services.AddScoped< IUnitOfWork, UnitOfWork>();
         services.AddScoped<IRegister, Register>();
         services.AddScoped<ILogin, Login>();
         services.AddScoped<IAddFriend, AddFriend>();
+        services.AddScoped<IPostService, PostService> ();
     }
 }
