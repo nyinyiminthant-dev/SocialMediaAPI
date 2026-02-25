@@ -9,7 +9,7 @@ COPY ["REPOSITORY/REPOSITORY.csproj", "REPOSITORY/"]
 RUN dotnet restore "Api/Api.csproj"
 
 COPY . .
-WORKDIR "/src/Api"
+WORKDIR "/Api"
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
