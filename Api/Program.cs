@@ -123,6 +123,12 @@ if(app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+if(app.Environment.IsStaging())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
