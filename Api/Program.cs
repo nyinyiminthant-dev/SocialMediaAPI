@@ -95,22 +95,22 @@ builder.Services.AddAuthentication(options =>
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 })
    .AddJwtBearer(options =>
-   {
-       options.SaveToken = true;
-       options.RequireHttpsMetadata = !builder.Environment.IsDevelopment();
-       options.RequireHttpsMetadata = true;
-       options.TokenValidationParameters = new()
-       {
-           ValidateIssuerSigningKey = true,
-           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAL0zIKgOk+azCEuVZvrvtkgjRk3VcSq4 kDzbi51WD2xCUGNafzI8cmoY9KqFh7s1V7C6nw3/QbzvTytwYR/c5Q0CAwEAAQ==")),
-           ValidateLifetime = true,
-           ValidateIssuer = true,
-           ValidateAudience = true,
-           ValidIssuer = "Allianz_DEV",
-           ValidAudience = "Allianz_DEV",
-           RoleClaimType = ClaimTypes.Role
-       };
-   });
+    {
+        options.SaveToken = true;
+        options.RequireHttpsMetadata = !builder.Environment.IsDevelopment();
+        options.RequireHttpsMetadata = true;
+        options.TokenValidationParameters = new()
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.SecretKey)),
+            ValidateLifetime = true,
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidIssuer = appSettings.Issuer,
+            ValidAudience = appSettings.Audience,
+            RoleClaimType = ClaimTypes.Role
+        };
+    });
 
 builder.Services.AddAuthorization();
 

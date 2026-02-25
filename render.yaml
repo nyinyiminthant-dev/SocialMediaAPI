@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: social-media-api
+    env: dotnet
+    region: Oregon
+    buildCommand: dotnet build -c Release
+    startCommand: dotnet Api.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
