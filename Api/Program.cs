@@ -129,6 +129,12 @@ if(app.Environment.IsStaging())
     app.UseSwaggerUI();
 }
 
+if(app.Environment.IsProduction())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
