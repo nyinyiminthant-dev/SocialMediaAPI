@@ -1,21 +1,21 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# GitHub ပေါ်ရှိ Folder အမည် အကြီး/အသေး အတိုင်း အတိအကျ ရေးပါ
-# ဥပမာ- SocialMediaAPI.sln ဖြစ်နိုင်သည် (သို့) Api.sln
-COPY SocialMediaAPI.sln ./
-COPY SocialMediaAPI/SocialMediaAPI.csproj SocialMediaAPI/
+# GitHub ပေါ်ရှိ Folder နာမည်အမှန်များအတိုင်း ကူးယူခြင်း
+COPY Api.sln ./
+COPY Api/Api.csproj Api/
 COPY BAL/BAL.csproj BAL/
 COPY MODEL/MODEL.csproj MODEL/
 COPY REPOSITORY/REPOSITORY.csproj REPOSITORY/
 
-# Project file တစ်ခုချင်းစီကို Restore လုပ်မည့်အစား Solution ဖိုင်ကို Restore လုပ်ခြင်းက ပိုစိတ်ချရသည်
-RUN dotnet restore SocialMediaAPI.sln
+# Dependency Restore လုပ်ခြင်း
+RUN dotnet restore Api.sln
 
+# ကျန်ရှိသော Source code အားလုံးကို ကူးယူခြင်း
 COPY . .
 
-# ပင်မ Project ရှိရာ Folder သို့ ပြောင်းပါ
-WORKDIR "/src/SocialMediaAPI"
+# ပင်မ Project ရှိရာ Folder (Api) သို့ ပြောင်းပါ
+WORKDIR "/src/Api"
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
@@ -25,5 +25,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# DLL အမည်ကိုလည်း သတိထားပါ (Project name အတိုင်းဖြစ်ရမည်)
-ENTRYPOINT ["dotnet", "SocialMediaAPI.dll"]
+# DLL အမည်သည် .csproj အမည်အတိုင်း Api.dll ဖြစ်ရပါမည်
+ENTRYPOINT ["dotnet", "Api.dll"]
